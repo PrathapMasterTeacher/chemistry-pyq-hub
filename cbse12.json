@@ -1,0 +1,24 @@
+[
+  {
+    "id": "cbse-2024-01",
+    "chapter": "Solutions",
+    "year": 2024,
+    "type": "1M MCQ",
+    "tag": "Colligative Properties",
+    "question": "Which of the following 0.1 M aqueous solutions has the highest boiling point? (Assume complete dissociation)",
+    "options": ["NaCl", "BaCl<sub>2</sub>", "Glucose", "Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>"],
+    "answerIndex": 3,
+    "solution": "&Delta;T<sub>b</sub> = i &middot; K<sub>b</sub> &middot; m. Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> gives the maximum ions (i = 5), so it has the highest boiling point."
+  },
+  {
+    "id": "cbse-2024-02",
+    "chapter": "Electrochemistry",
+    "year": 2024,
+    "type": "2M",
+    "tag": "NCERT Law",
+    "question": "State Kohlrausch's law of independent migration of ions. Write one application.",
+    "options": [],
+    "answerIndex": null,
+    "solution": "Limiting molar conductivity of an electrolyte is the sum of individual contributions of its cation and anion (&Lambda;&deg;<sub>m</sub> = &nu;<sub>+</sub>&lambda;&deg;<sub>+</sub> + &nu;<sub>&minus;</sub>&lambda;&deg;<sub>&minus;</sub>).<br><strong>Application:</strong> Calculating &Lambda;&deg;<sub>m</sub> of weak electrolytes like CH<sub>3</sub>COOH."
+  }
+]
