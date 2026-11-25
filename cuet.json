@@ -1,0 +1,13 @@
+[
+  {
+    "id": "cuet-2024-01",
+    "chapter": "Biomolecules",
+    "year": 2024,
+    "type": "MCQ",
+    "tag": "Vitamins",
+    "question": "Deficiency of which vitamin causes pernicious anaemia?",
+    "options": ["Vitamin B<sub>1</sub>", "Vitamin B<sub>2</sub>", "Vitamin B<sub>6</sub>", "Vitamin B<sub>12</sub>"],
+    "answerIndex": 3,
+    "solution": "<strong>Vitamin B<sub>12</sub></strong> (Cyanocobalamin) deficiency leads to pernicious anaemia (RBC deficiency in haemoglobin)."
+  }
+]
