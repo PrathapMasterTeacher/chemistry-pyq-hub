@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chemistry PYQ Hub | CBSE, TN Board, NEET, JEE &amp; CUET</title>
+  <title>Chemistry Practice Hub | CBSE, TN Board, NEET, JEE &amp; CUET</title>
   <style>
     :root {
       --bg: #f8fafc; --card: #ffffff; --text: #0f172a; --muted: #64748b;
@@ -20,11 +20,12 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
     header { background: var(--card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 20; }
-    .nav-wrap { max-width: 980px; margin: 0 auto; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .nav-wrap { max-width: 980px; margin: 0 auto; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
     .brand h1 { font-size: 1.15rem; color: var(--primary); }
     .brand p { font-size: 0.78rem; color: var(--muted); }
-    .nav-actions { display: flex; gap: 8px; }
-    .theme-btn, .wa-btn { border: 1px solid var(--border); background: var(--bg); color: var(--text); padding: 6px 11px; border-radius: 8px; cursor: pointer; font-size: 0.8rem; font-weight: 600; text-decoration: none; }
+    .nav-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .theme-btn, .wa-btn, .json-btn { border: 1px solid var(--border); background: var(--bg); color: var(--text); padding: 6px 11px; border-radius: 8px; cursor: pointer; font-size: 0.8rem; font-weight: 600; text-decoration: none; }
+    .json-btn { background: var(--primary-light); color: var(--primary); border-color: var(--primary); }
     .wa-btn { background: var(--success-bg); color: var(--success); border-color: var(--success); }
     main { max-width: 980px; margin: 18px auto 50px; padding: 0 16px; }
     .exam-tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 16px; }
@@ -42,6 +43,7 @@
     .chip.active { background: var(--primary); color: #fff; border-color: var(--primary); }
     .q-list { display: grid; gap: 14px; }
     .q-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+    .q-heading { font-size: 0.8rem; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
     .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
     .badge { font-size: 0.74rem; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: var(--bg); border: 1px solid var(--border); color: var(--muted); }
     .badge.chapter { background: var(--primary-light); color: var(--primary); border: none; }
@@ -69,10 +71,11 @@
   <header>
     <div class="nav-wrap">
       <div class="brand">
-        <h1>Chemistry PYQ Hub</h1>
+        <h1>Chemistry Practice Hub</h1>
         <p>By M. Prathap (M.Sc., B.Ed.) &bull; Tamil &amp; English</p>
       </div>
       <div class="nav-actions">
+        <a class="json-btn" href="12th_Chem_Ch_1_to_10_Practice_MCQ_Level_1.json" target="_blank">Level 1 JSON</a>
         <a class="wa-btn" href="https://wa.me/919677795536" target="_blank">Doubts</a>
         <button class="theme-btn" id="themeToggle">Dark</button>
       </div>
@@ -89,16 +92,16 @@
     </div>
 
     <section class="stats-grid">
-      <div class="stat-card"><div class="stat-num" id="statTotal">0</div><div class="stat-label">Exam PYQs</div></div>
+      <div class="stat-card"><div class="stat-num" id="statTotal">0</div><div class="stat-label">Practice MCQs</div></div>
       <div class="stat-card"><div class="stat-num" id="statSolved">0</div><div class="stat-label">Solved</div></div>
       <div class="stat-card"><div class="stat-num" id="statSaved">0</div><div class="stat-label">Bookmarked</div></div>
     </section>
 
     <section class="controls">
-      <input type="text" id="searchInput" placeholder="Search topic, reaction, formula, or keyword..." />
+      <input type="text" id="searchInput" placeholder="Search chapter, heading, reaction, formula, or keyword..." />
       <div class="filter-row">
         <select id="chapterFilter"><option value="all">All Chapters</option></select>
-        <select id="yearFilter"><option value="all">All Years</option></select>
+        <select id="yearFilter"><option value="all">All Sets</option></select>
         <select id="typeFilter"><option value="all">All Question Types</option></select>
       </div>
       <div class="chip-row">
@@ -117,11 +120,21 @@
   </footer>
 
   <script>
+    const LEVEL_1_FILE = "12th_Chem_Ch_1_to_10_Practice_MCQ_Level_1.json";
+
+    const EXAM_JSON_MAP = {
+      cbse12: [LEVEL_1_FILE, "cbse12.json"],
+      neet: [LEVEL_1_FILE, "neet.json"],
+      jee: [LEVEL_1_FILE, "jee.json"],
+      cuet: [LEVEL_1_FILE, "cuet.json"],
+      tnboard12: ["tnboard12.json", LEVEL_1_FILE]
+    };
+
     let currentExam = "cbse12";
     let currentQuestions = [];
     let activeMode = "all";
-    let solvedIds = new Set(JSON.parse(localStorage.getItem("caa_pyq_solved") || "[]"));
-    let savedIds = new Set(JSON.parse(localStorage.getItem("caa_pyq_saved") || "[]"));
+    let solvedIds = new Set(JSON.parse(localStorage.getItem("caa_mcq_solved") || "[]"));
+    let savedIds = new Set(JSON.parse(localStorage.getItem("caa_mcq_saved") || "[]"));
 
     const chapterFilter = document.getElementById("chapterFilter");
     const yearFilter = document.getElementById("yearFilter");
@@ -131,29 +144,37 @@
 
     async function loadExam(examKey) {
       currentExam = examKey;
-      questionList.innerHTML = `<div class="empty">Loading ${examKey.toUpperCase()} PYQs...</div>`;
-      try {
-        const res = await fetch(`${examKey}.json?v=${Date.now()}`);
-        if (!res.ok) throw new Error("Not found");
-        currentQuestions = await res.json();
-      } catch (e) {
-        currentQuestions = [];
+      questionList.innerHTML = `<div class="empty">Loading ${examKey.toUpperCase()} practice questions...</div>`;
+      const candidates = EXAM_JSON_MAP[examKey] || [`${examKey}.json`];
+      currentQuestions = [];
+
+      for (const file of candidates) {
+        try {
+          const res = await fetch(`${file}?v=${Date.now()}`);
+          if (res.ok) {
+            currentQuestions = await res.json();
+            break;
+          }
+        } catch (e) {
+          // Try next file
+        }
       }
+
       populateFilters();
       updateStats();
       renderQuestions();
     }
 
     function populateFilters() {
-      const chapters = [...new Set(currentQuestions.map(q => q.chapter))];
+      const chapters = [...new Set(currentQuestions.map(q => q.chapter).filter(Boolean))];
       chapterFilter.innerHTML = `<option value="all">All Chapters (${chapters.length})</option>` +
         chapters.map(c => `<option value="${c}">${c}</option>`).join("");
 
-      const years = [...new Set(currentQuestions.map(q => q.year))].sort((a, b) => b - a);
-      yearFilter.innerHTML = `<option value="all">All Years</option>` +
+      const years = [...new Set(currentQuestions.map(q => q.year).filter(Boolean))].sort();
+      yearFilter.innerHTML = `<option value="all">All Sets</option>` +
         years.map(y => `<option value="${y}">${y}</option>`).join("");
 
-      const types = [...new Set(currentQuestions.map(q => q.type))];
+      const types = [...new Set(currentQuestions.map(q => q.type).filter(Boolean))];
       typeFilter.innerHTML = `<option value="all">All Question Types</option>` +
         types.map(t => `<option value="${t}">${t}</option>`).join("");
     }
@@ -166,7 +187,7 @@
 
     function renderQuestions() {
       if (!currentQuestions.length) {
-        questionList.innerHTML = `<div class="empty">Questions for this exam are being uploaded soon! Check back or message on WhatsApp (9677795536).</div>`;
+        questionList.innerHTML = `<div class="empty">Questions for this tab are being uploaded soon! Message on WhatsApp (9677795536) for updates.</div>`;
         return;
       }
       const ch = chapterFilter.value;
@@ -180,7 +201,7 @@
         if (tp !== "all" && q.type !== tp) return false;
         if (activeMode === "unsolved" && solvedIds.has(q.id)) return false;
         if (activeMode === "bookmarked" && !savedIds.has(q.id)) return false;
-        if (term && !`${q.chapter} ${q.tag || ""} ${q.question} ${q.solution}`.toLowerCase().includes(term)) return false;
+        if (term && !`${q.heading || ""} ${q.chapter || ""} ${q.tag || ""} ${q.question} ${q.solution}`.toLowerCase().includes(term)) return false;
         return true;
       });
 
@@ -198,11 +219,11 @@
 
         return `
           <article class="q-card">
+            ${q.heading ? `<div class="q-heading">${q.heading}</div>` : ""}
             <div class="badges">
-              <span class="badge chapter">${q.chapter}</span>
-              <span class="badge year">${q.year}</span>
-              <span class="badge">${q.type}</span>
-              ${q.tag ? `<span class="badge">${q.tag}</span>` : ""}
+              ${q.chapter ? `<span class="badge chapter">${q.chapter}</span>` : ""}
+              ${q.year ? `<span class="badge year">${q.year}</span>` : ""}
+              ${q.type ? `<span class="badge">${q.type}</span>` : ""}
             </div>
             <div class="q-text"><strong>Q${idx + 1}.</strong> ${q.question}</div>
             ${opts}
@@ -227,7 +248,7 @@
       });
       if (chosen === correct) {
         solvedIds.add(qid);
-        localStorage.setItem("caa_pyq_solved", JSON.stringify([...solvedIds]));
+        localStorage.setItem("caa_mcq_solved", JSON.stringify([...solvedIds]));
         updateStats();
       }
       document.getElementById(`sol-${qid}`).classList.add("open");
@@ -240,13 +261,13 @@
 
     window.toggleSolved = qid => {
       solvedIds.has(qid) ? solvedIds.delete(qid) : solvedIds.add(qid);
-      localStorage.setItem("caa_pyq_solved", JSON.stringify([...solvedIds]));
+      localStorage.setItem("caa_mcq_solved", JSON.stringify([...solvedIds]));
       updateStats(); renderQuestions();
     };
 
     window.toggleSaved = qid => {
       savedIds.has(qid) ? savedIds.delete(qid) : savedIds.add(qid);
-      localStorage.setItem("caa_pyq_saved", JSON.stringify([...savedIds]));
+      localStorage.setItem("caa_mcq_saved", JSON.stringify([...savedIds]));
       updateStats(); renderQuestions();
     };
 
@@ -271,11 +292,11 @@
     searchInput.addEventListener("input", renderQuestions);
 
     const themeBtn = document.getElementById("themeToggle");
-    if (localStorage.getItem("caa_pyq_theme") === "dark") { document.body.classList.add("dark"); themeBtn.textContent = "Light"; }
+    if (localStorage.getItem("caa_mcq_theme") === "dark") { document.body.classList.add("dark"); themeBtn.textContent = "Light"; }
     themeBtn.addEventListener("click", () => {
       const dark = document.body.classList.toggle("dark");
       themeBtn.textContent = dark ? "Light" : "Dark";
-      localStorage.setItem("caa_pyq_theme", dark ? "dark" : "light");
+      localStorage.setItem("caa_mcq_theme", dark ? "dark" : "light");
     });
 
     loadExam("cbse12");
