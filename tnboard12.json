@@ -1,0 +1,24 @@
+[
+  {
+    "id": "tn-2024-01",
+    "chapter": "Metallurgy",
+    "year": 2024,
+    "type": "1M MCQ",
+    "tag": "Book Back",
+    "question": "Wolframite ore is separated from tinstone by the process of:",
+    "options": ["Smelting", "Calcination", "Roasting", "Electromagnetic separation"],
+    "answerIndex": 3,
+    "solution": "Wolframite (FeWO<sub>4</sub>) is magnetic while tinstone (SnO<sub>2</sub>) is non-magnetic, so they are separated by <strong>electromagnetic separation</strong>."
+  },
+  {
+    "id": "tn-2023-01",
+    "chapter": "Coordination Chemistry",
+    "year": 2023,
+    "type": "3M",
+    "tag": "Werner's Theory",
+    "question": "Write the postulates of Werner's theory of coordination compounds.",
+    "options": [],
+    "answerIndex": null,
+    "solution": "1. Metals exhibit primary (ionisable, oxidation state) and secondary (non-ionisable, coordination number) valencies.<br>2. Secondary valencies are directional in space, giving definite geometry to the complex."
+  }
+]
