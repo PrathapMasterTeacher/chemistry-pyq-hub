@@ -1,0 +1,13 @@
+[
+  {
+    "id": "jeem-2024-01",
+    "chapter": "Chemical Kinetics",
+    "year": 2024,
+    "type": "JEE Main MCQ",
+    "tag": "Half-Life",
+    "question": "For a first-order reaction, the time required for 75% completion is how many times its half-life (t<sub>1/2</sub>)?",
+    "options": ["1.5 times", "2 times", "3 times", "4 times"],
+    "answerIndex": 1,
+    "solution": "After one t<sub>1/2</sub>, 50% reacts. After a second t<sub>1/2</sub>, half of the remaining 50% (25%) reacts, reaching 75%. Thus, t<sub>75%</sub> = <strong>2 &times; t<sub>1/2</sub></strong>."
+  }
+]
