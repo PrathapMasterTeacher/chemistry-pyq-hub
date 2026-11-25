@@ -1,13 +1,952 @@
 [
   {
-    "id": "neet-2024-01",
-    "chapter": "Coordination Compounds",
-    "year": 2024,
-    "type": "MCQ",
-    "tag": "Isomerism",
-    "question": "Which complex does NOT show geometrical isomerism?",
-    "options": ["[Pt(NH<sub>3</sub>)<sub>2</sub>Cl<sub>2</sub>]", "[Co(NH<sub>3</sub>)<sub>4</sub>Cl<sub>2</sub>]<sup>+</sup>", "[Co(NH<sub>3</sub>)<sub>5</sub>Cl]<sup>2+</sup>", "[Cr(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup>"],
+    "id": "12th-ch02-electrochemistry-lvl1-q01",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "In the operating cell Mg ∣ Mg<sup>2+</sup> ∣∣ Ag<sup>+</sup> ∣ Ag, electrons travel through the wire in which direction?",
+    "options": [
+      "Salt bridge to Ag",
+      "Ag to salt bridge",
+      "Mg to Ag",
+      "Ag to Mg"
+    ],
     "answerIndex": 2,
-    "solution": "A complex of type <strong>[MA<sub>5</sub>B]</strong> ([Co(NH<sub>3</sub>)<sub>5</sub>Cl]<sup>2+</sup>) has only one spatial arrangement and cannot exhibit cis-trans isomerism."
+    "answer": "C",
+    "solution": "C - Mg to Ag Mg is oxidised to Mg<sup>2+</sup> at the anode. Ag<sup>+</sup> is reduced to Ag at the cathode, so electrons travel through the wire from Mg to Ag."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q02",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "In a working Zn–Cu cell with a KNO<sub>3</sub> bridge, which ion migrates towards the zinc compartment?",
+    "options": [
+      "NO<sub>3</sub><sup>-</sup>",
+      "K<sup>+</sup>",
+      "Zn<sup>2+</sup> through the bridge",
+      "Cu<sup>2+</sup> through the bridge"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - NO<sub>3</sub><sup>-</sup> Zn<sup>2+</sup> accumulates at the anode as Zn oxidises. Nitrate ions enter that compartment to offset the buildup of positive charge."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q03",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "E°(Fe<sup>2+</sup>/Fe) = −0.44 V and E°(Cu<sup>2+</sup>/Cu) = +0.34 V. What is E° for spontaneous iron oxidation by Cu<sup>2+</sup>?",
+    "options": [
+      "0.10 V",
+      "−0.10 V",
+      "−0.78 V",
+      "0.78 V"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - 0.78 V Cu<sup>2+</sup> is reduced and Fe is oxidised. Using reduction potentials, E° = +0.34 − (−0.44) = +0.78 V."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q04",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which metal can reduce Zn<sup>2+</sup> under standard conditions? E°(Zn<sup>2+</sup>/Zn) = −0.76 V.",
+    "options": [
+      "Fe, E° = −0.44 V",
+      "Ag, E° = +0.80 V",
+      "Cu, E° = +0.34 V",
+      "Mg, E° = −2.37 V"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - Mg, E° = −2.37 V Mg has the more negative reduction potential. Pairing Mg oxidation with Zn<sup>2+</sup> reduction gives E° = −0.76 − (−2.37) = +1.61 V."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q05",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "In Zn + Cu<sup>2+</sup> → Zn<sup>2+</sup> + Cu, how does increasing [Cu<sup>2+</sup>] alone affect the EMF at fixed temperature?",
+    "options": [
+      "Leaves it unchanged",
+      "Increases it",
+      "Decreases it",
+      "Makes it zero at any concentration"
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - Increases it Q = a(Zn<sup>2+</sup>)/a(Cu<sup>2+</sup>). Increasing Cu<sup>2+</sup> lowers Q, so the subtraction term in E = E° − (RT/nF)ln Q becomes smaller and E increases."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q06",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "For a two-electron reaction at 298 K, E° = 0.40 V and Q = 10<sup>2</sup>. Use 2.303RT/F = 0.059 V. What is E?",
+    "options": [
+      "0.282 V",
+      "0.400 V",
+      "0.341 V",
+      "0.459 V"
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - 0.341 V E = 0.40 − (0.059/2)log(10<sup>2</sup>) = 0.40 − 0.059 = 0.341 V."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q07",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "A cell has E° = 0.118 V at 298 K and n = 1. Using 2.303RT/F = 0.059 V, find K.",
+    "options": [
+      "10<sup>-2</sup>",
+      "10",
+      "10<sup>2</sup>",
+      "1"
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - 10<sup>2</sup> At equilibrium E = 0 and Q = K, so log K = nE°/0.059 = 0.118/0.059 = 2. Thus K = 100."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q08",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "For n = 2 and E° = 0.80 V, find ΔG° using F = 96 500 C mol<sup>-1</sup>.",
+    "options": [
+      "−77.2 kJ mol<sup>-1</sup>",
+      "+154.4 kJ mol<sup>-1</sup>",
+      "+77.2 kJ mol<sup>-1</sup>",
+      "−154.4 kJ mol<sup>-1</sup>"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - −154.4 kJ mol<sup>-1</sup> ΔG° = −nFE° = −2 × 96 500 × 0.80 = −154 400 J mol<sup>-1</sup>, or −154.4 kJ mol<sup>-1</sup>."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q09",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which statements hold when a reversible cell reaction reaches equilibrium?",
+    "options": [
+      "Q = K and E = 0",
+      "Q = K and E = E° always",
+      "Q = 1 and E = 0 always",
+      "Q = 0 and E = E°"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - Q = K and E = 0 At equilibrium the reaction quotient has reached K and ΔG = 0. The relation ΔG = −nFE then gives E = 0."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q10",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Why is the pure metal absent from the Nernst reaction quotient in a typical metal–metal-ion cell?",
+    "options": [
+      "Activity of solvent, taken as 0",
+      "Activity of dissolved ions, taken as 1",
+      "Activity of a pure solid, taken as 1",
+      "Electron transfer number, taken as 0"
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - Activity of a pure solid, taken as 1 A pure solid has unit activity. Including that factor in the quotient would simply multiply or divide by one."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q11",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "The resistance of an electrolyte in the same conductivity cell rises fourfold. What happens to conductivity?",
+    "options": [
+      "Rises fourfold",
+      "Falls to one-fourth",
+      "Falls to one-half",
+      "Is unchanged"
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - Falls to one-fourth Conductivity equals the cell constant divided by resistance. With fixed geometry, a fourfold resistance gives one-fourth the conductivity."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q12",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "A cell with constant 0.80 cm<sup>-1</sup> contains a solution of conductance 0.020 S. Find κ.",
+    "options": [
+      "0.016 S cm<sup>-1</sup>",
+      "0.040 S cm<sup>-1</sup>",
+      "0.0040 S cm<sup>-1</sup>",
+      "0.025 S cm<sup>-1</sup>"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - 0.016 S cm<sup>-1</sup> κ = G(ℓ/A) = 0.020 S × 0.80 cm<sup>-1</sup> = 0.016 S cm<sup>-1</sup>."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q13",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "κ = 0.0015 S cm<sup>-1</sup> at 0.010 M. Find Λm.",
+    "options": [
+      "1500 S cm<sup>2</sup> mol<sup>-1</sup>",
+      "0.15 S cm<sup>2</sup> mol<sup>-1</sup>",
+      "150 S cm<sup>2</sup> mol<sup>-1</sup>",
+      "15 S cm<sup>2</sup> mol<sup>-1</sup>"
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - 150 S cm<sup>2</sup> mol<sup>-1</sup> Λm = 1000κ/c = 1000 × 0.0015/0.010 = 150 S cm<sup>2</sup> mol<sup>-1</sup> when c is in mol L<sup>-1</sup>."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q14",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which geometrical change doubles the cell constant ℓ/A?",
+    "options": [
+      "Doubling electrode separation alone",
+      "Halving electrode separation alone",
+      "Doubling electrode area alone",
+      "Doubling separation and area together"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - Doubling electrode separation alone The cell constant is ℓ/A. Doubling ℓ at fixed A doubles ℓ/A."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q15",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which pair of trends usually occurs on diluting an electrolyte?",
+    "options": [
+      "κ decreases and Λm increases",
+      "κ and Λm both increase",
+      "κ and Λm both decrease",
+      "κ increases and Λm decreases"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - κ decreases and Λm increases Dilution usually lowers the number of ions per unit volume and hence κ. Interionic interactions decrease and weak electrolytes ionise more, so Λm increases."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q16",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which plot can be extrapolated approximately linearly to determine Λ°m for a strong electrolyte at low concentration?",
+    "options": [
+      "κ versus 1/c",
+      "Λm versus √c",
+      "Λm versus log c",
+      "R versus c<sup>2</sup>"
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - Λm versus √c At low concentration a strong electrolyte follows Λm ≈ Λ°m − A√c. The intercept of Λm against √c is Λ°m."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q17",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which combination gives Λ°m(CH<sub>3</sub>COOH)?",
+    "options": [
+      "Λ°m(NaCl) − Λ°m(HCl) − Λ°m(CH<sub>3</sub>COONa)",
+      "Λ°m(HCl) − Λ°m(CH<sub>3</sub>COONa) + Λ°m(NaCl)",
+      "Λ°m(HCl) + Λ°m(NaCl) − Λ°m(CH<sub>3</sub>COONa)",
+      "Λ°m(HCl) + Λ°m(CH<sub>3</sub>COONa) − Λ°m(NaCl)"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - Λ°m(HCl) + Λ°m(CH<sub>3</sub>COONa) − Λ°m(NaCl) Kohlrausch’s law allows ionic sums. Add HCl and CH<sub>3</sub>COONa, then subtract NaCl to cancel Na<sup>+</sup> and Cl<sup>-</sup> and retain H<sup>+</sup> and acetate."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q18",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "A weak electrolyte has Λm = 12 and Λ°m = 300 S cm<sup>2</sup> mol<sup>-1</sup>. Estimate its degree of dissociation.",
+    "options": [
+      "4.0",
+      "0.40",
+      "0.040",
+      "0.25"
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - 0.040 The weak-electrolyte estimate is α = Λm/Λ°m = 12/300 = 0.040, or 4.0%."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q19",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "How much charge is needed to discharge 0.25 mol of Al<sup>3+</sup> completely?",
+    "options": [
+      "0.25 F",
+      "1.00 F",
+      "3.00 F",
+      "0.75 F"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - 0.75 F Al<sup>3+</sup> + 3e<sup>-</sup> → Al. The charge for 0.25 mol is 3 × 0.25 = 0.75 faraday, or approximately 72 375 C."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q20",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "A 2.00 A current passes for 965 s. How many moles of electrons pass? F = 96 500 C mol<sup>-1</sup>.",
+    "options": [
+      "0.200 mol",
+      "0.0200 mol",
+      "0.0100 mol",
+      "0.00200 mol"
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - 0.0200 mol Q = It = 2.00 × 965 = 1930 C. The amount of electrons is 1930/96 500 = 0.0200 mol."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q21",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "How much Ag is deposited by 0.10 F from AgNO<sub>3</sub> at 100% efficiency? M(Ag) = 108 g mol<sup>-1</sup>.",
+    "options": [
+      "5.4 g",
+      "10.8 g",
+      "108 g",
+      "21.6 g"
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - 10.8 g Ag<sup>+</sup> needs one electron per ion, so 0.10 F deposits 0.10 mol of Ag. The mass is 0.10 × 108 = 10.8 g."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q22",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "The same charge deposits Cu from Cu<sup>2+</sup> and Ag from Ag<sup>+</sup>. What is the mole ratio Ag : Cu?",
+    "options": [
+      "1 : 2",
+      "1 : 1",
+      "4 : 1",
+      "2 : 1"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - 2 : 1 Ag<sup>+</sup> requires one electron per ion and Cu<sup>2+</sup> requires two. Equal charge deposits twice as many moles of Ag as Cu."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q23",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which species forms at the anode during electrolysis of molten NaCl?",
+    "options": [
+      "H<sub>2</sub>",
+      "Cl<sub>2</sub>",
+      "O<sub>2</sub>",
+      "Na"
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - Cl<sub>2</sub> At the anode chloride is oxidised: 2Cl<sup>-</sup> → Cl<sub>2</sub> + 2e<sup>-</sup>. Sodium ions are reduced at the cathode."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q24",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which gas is released at the cathode during electrolysis of concentrated aqueous NaCl with inert electrodes?",
+    "options": [
+      "H<sub>2</sub>",
+      "N<sub>2</sub>",
+      "Cl<sub>2</sub>",
+      "O<sub>2</sub>"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - H<sub>2</sub> In aqueous brine, water is reduced at the cathode: 2H<sub>2</sub>O + 2e<sup>-</sup> → H<sub>2</sub> + 2OH<sup>-</sup>."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q25",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which solid accumulates at both plates of a lead storage battery during discharge?",
+    "options": [
+      "Pb only",
+      "PbO<sub>2</sub>",
+      "PbO",
+      "PbSO<sub>4</sub>"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - PbSO<sub>4</sub> Pb at the negative plate and PbO<sub>2</sub> at the positive plate both become PbSO<sub>4</sub> during discharge, consuming sulfuric acid."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q26",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "What happens to sulfuric acid concentration during charging of a lead storage battery?",
+    "options": [
+      "It becomes zero.",
+      "It rises.",
+      "It falls.",
+      "It stays constant through charging."
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - It rises. Charging reverses the discharge reaction. PbSO<sub>4</sub> is converted back into the active plate materials and sulfuric acid is regenerated."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q27",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Which cell is designed for repeated charging and discharging?",
+    "options": [
+      "Simple Daniell cell",
+      "Leclanché dry cell",
+      "Lead storage battery",
+      "Mercury cell"
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - Lead storage battery The lead storage battery is a secondary cell. Applying an external current reverses its discharge reaction so it can be used repeatedly."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q28",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "In a hydrogen–oxygen fuel cell, which reactant is supplied to the electrode at which oxidation occurs?",
+    "options": [
+      "O<sub>2</sub> at the anode",
+      "H<sub>2</sub> at the cathode",
+      "O<sub>2</sub> at the cathode",
+      "H<sub>2</sub> at the anode"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - H<sub>2</sub> at the anode Hydrogen is the fuel and loses electrons at the anode. Oxygen accepts electrons at the cathode."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q29",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "In aerated neutral water, what is the usual cathodic product when O<sub>2</sub> is reduced during iron corrosion?",
+    "options": [
+      "OH<sup>-</sup>",
+      "H<sub>2</sub>",
+      "Cl<sup>-</sup>",
+      "Fe<sup>2+</sup>"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - OH<sup>-</sup> The neutral-water cathodic half-reaction is O<sub>2</sub> + 2H<sub>2</sub>O + 4e<sup>-</sup> → 4OH<sup>-</sup>."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q30",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "MCQ Test",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Connecting Mg to iron suppresses rusting because Mg does what?",
+    "options": [
+      "Prevents movement of all electrons",
+      "Acts as a passive layer of Fe<sub>2</sub>O<sub>3</sub>",
+      "Oxidises preferentially",
+      "Increases the rate of iron oxidation"
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - Oxidises preferentially Mg oxidises preferentially to Mg<sup>2+</sup>. It supplies electrons to the iron, acting as a sacrificial anode."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q31",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match each cell symbol with its meaning.<br>Column I<br>Column II<br>P. Single vertical line<br>1. Inert conducting electrode<br>Q. Double vertical line<br>2. Phase boundary<br>R. Pt(s) beside H<sub>2</sub><br>3. Salt bridge or liquid junction<br>S. Cell notation from left to right<br>4. Anode to cathode for the stated galvanic reaction",
+    "options": [
+      "P–1, Q–2, R–3, S–4",
+      "P–3, Q–4, R–1, S–2",
+      "P–1, Q–3, R–2, S–4",
+      "P–2, Q–3, R–1, S–4"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - P–2, Q–3, R–1, S–4 A single line shows a phase boundary, a double line a liquid junction, Pt is an inert conductor, and conventional galvanic notation places the anode first."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q32",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match each numerical condition with E for a cell having E° = 0.50 V, n = 2 at 298 K. Use<br>2.303RT/F = 0.059 V.<br>Column I<br>Column II<br>P. Q = 1<br>1. 0.559 V<br>Q. Q = 10<sup>2</sup><br>2. 0.441 V<br>R. Q = 10<sup>-2</sup><br>3. 0.382 V<br>S. Q = 10<sup>4</sup><br>4. 0.500 V",
+    "options": [
+      "P–1, Q–4, R–2, S–3",
+      "P–2, Q–3, R–1, S–4",
+      "P–2, Q–3, R–4, S–1",
+      "P–4, Q–2, R–1, S–3"
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - P–4, Q–2, R–1, S–3 Substitute in E = 0.50 − (0.059/2)log Q. For the four Q values the potentials are 0.500, 0.441, 0.559 and 0.382 V."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q33",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match each quantity with its relation.<br>Column I<br>Column II<br>P. Conductance G<br>1. ℓ/A<br>Q. Conductivity κ<br>2. 1/R<br>R. Cell constant<br>3. 1000κ/c for c in mol L<sup>-1</sup><br>S. Molar conductivity in S cm<sup>2</sup> mol<sup>-1</sup><br>4. G × cell constant",
+    "options": [
+      "P–1, Q–4, R–2, S–3",
+      "P–2, Q–4, R–1, S–3",
+      "P–3, Q–1, R–2, S–4",
+      "P–2, Q–3, R–1, S–4"
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - P–2, Q–4, R–1, S–3 G = 1/R, κ = Gℓ/A, cell constant = ℓ/A, and Λm = 1000κ/c for c in mol L<sup>-1</sup>."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q34",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match each quantity with a valid unit.<br>Column I<br>Column II<br>P. Conductivity<br>1. Ω<br>Q. Molar conductivity<br>2. S cm<sup>-1</sup><br>R. Resistance<br>3. cm<sup>-1</sup><br>S. Cell constant<br>4. S cm<sup>2</sup> mol<sup>-1</sup>",
+    "options": [
+      "P–2, Q–4, R–1, S–3",
+      "P–1, Q–4, R–3, S–2",
+      "P–4, Q–3, R–2, S–1",
+      "P–4, Q–2, R–3, S–1"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - P–2, Q–4, R–1, S–3 Conductivity is in S cm<sup>-1</sup>, molar conductivity in S cm<sup>2</sup> mol<sup>-1</sup>, resistance in Ω, and ℓ/A in cm<sup>-1</sup>."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q35",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match each ion with charge needed to deposit 1 mol of the metal.<br>Column I<br>Column II<br>P. Ag<sup>+</sup><br>1. 4F<br>Q. Cu<sup>2+</sup><br>2. F<br>R. Al<sup>3+</sup><br>3. 3F<br>S. Sn<sup>4+</sup><br>4. 2F",
+    "options": [
+      "P–2, Q–3, R–4, S–1",
+      "P–4, Q–3, R–1, S–2",
+      "P–2, Q–4, R–3, S–1",
+      "P–4, Q–2, R–3, S–1"
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - P–2, Q–4, R–3, S–1 One mole of metal receives the number of electron moles given by the ionic charge: 1 for Ag<sup>+</sup>, 2 for Cu<sup>2+</sup>, 3 for Al<sup>3+</sup> and 4 for Sn<sup>4+</sup>."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q36",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match each electrode process with its product.<br>Column I<br>Column II<br>P. Cathode of molten NaCl electrolysis<br>1. Cl<sub>2</sub><br>Q. Anode of molten NaCl electrolysis<br>2. O<sub>2</sub><br>R. Cathode of brine electrolysis<br>3. Na<br>S. Inert anode during electrolysis of acidified water<br>4. H<sub>2</sub>",
+    "options": [
+      "P–3, Q–1, R–4, S–2",
+      "P–2, Q–4, R–3, S–1",
+      "P–3, Q–4, R–1, S–2",
+      "P–1, Q–4, R–3, S–2"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - P–3, Q–1, R–4, S–2 Molten NaCl gives Na at the cathode and Cl<sub>2</sub> at the anode. Aqueous brine gives H<sub>2</sub> at the cathode, and acidified water gives O<sub>2</sub> at the inert anode."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q37",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match each electrochemical device with its identifying feature.<br>Column I<br>Column II<br>P. Lead storage battery<br>1. Pb and PbO<sub>2</sub> plates<br>Q. Leclanché dry cell<br>2. HgO cathode active material<br>R. Mercury cell<br>3. Zinc container and MnO<sub>2</sub> depolariser<br>S. Hydrogen–oxygen fuel cell<br>4. Continuous supply of reactant gases",
+    "options": [
+      "P–2, Q–3, R–1, S–4",
+      "P–1, Q–3, R–2, S–4",
+      "P–3, Q–4, R–1, S–2",
+      "P–3, Q–1, R–4, S–2"
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - P–1, Q–3, R–2, S–4 The lead battery has Pb/PbO<sub>2</sub> plates. The Leclanché cell uses zinc and MnO<sub>2</sub>, the mercury cell uses HgO, and a fuel cell uses externally supplied gases."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q38",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match each fuel-cell or corrosion process to its equation.<br>Column I<br>Column II<br>P. H<sub>2</sub> oxidation in alkaline medium<br>1. H<sub>2</sub> + 2OH<sup>-</sup> → 2H<sub>2</sub>O + 2e<sup>-</sup><br>Q. O<sub>2</sub> reduction in alkaline medium<br>2. Fe<sup>2+</sup> + 2OH<sup>-</sup> → Fe(OH)<sub>2</sub><br>R. Anodic dissolution of iron<br>3. O<sub>2</sub> + 2H<sub>2</sub>O + 4e<sup>-</sup> → 4OH<sup>-</sup><br>S. Precipitation of ferrous hydroxide<br>4. Fe → Fe<sup>2+</sup> + 2e<sup>-</sup>",
+    "options": [
+      "P–1, Q–2, R–3, S–4",
+      "P–1, Q–3, R–4, S–2",
+      "P–1, Q–2, R–4, S–3",
+      "P–3, Q–1, R–4, S–2"
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - P–1, Q–3, R–4, S–2 H<sub>2</sub> loses electrons in alkaline medium, while O<sub>2</sub> gains electrons to give OH<sup>-</sup>. Iron loses electrons to Fe<sup>2+</sup>, which combines with OH<sup>-</sup> to precipitate Fe(OH)<sub>2</sub>."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q39",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match the condition with its thermodynamic implication for the reaction as written.<br>Column I<br>Column II<br>P. E° > 0<br>1. K > 1<br>Q. E° < 0<br>2. ΔG° > 0<br>R. E° = 0=K<br>3. ΔG < 0 under those conditions<br>S. E > 0 under actual conditions<br>4. 1",
+    "options": [
+      "P–1, Q–2, R–4, S–3",
+      "P–1, Q–4, R–2, S–3",
+      "P–1, Q–2, R–3, S–4",
+      "P–3, Q–1, R–4, S–2"
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - P–1, Q–2, R–4, S–3 E° > 0 gives K > 1, and E° < 0 gives ΔG° > 0. For row R, read “E° = 0” on the left and “K = 1” on the right. E > 0 gives ΔG < 0 under the stated conditions."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q40",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Match the Column",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Match each conductivity observation with its explanation.<br>Column I<br>Column II<br>P. Λm of weak electrolyte rises steeply on dilution<br>1. Ionisation increases substantially<br>Q. Conductivity usually falls on dilution<br>2. Kohlrausch’s law<br>R. Limiting ionic contributions add<br>3. Fewer charge carriers per unit volume<br>S. Alternating current used in conductivity<br>measurement<br>4. Reduced electrode polarisation",
+    "options": [
+      "P–3, Q–4, R–1, S–2",
+      "P–3, Q–4, R–2, S–1",
+      "P–1, Q–3, R–2, S–4",
+      "P–2, Q–4, R–1, S–3"
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - P–1, Q–3, R–2, S–4 Weak-electrolyte ionisation rises upon dilution. Ions per unit volume fall, ionic contributions add at infinite dilution, and alternating current reduces electrode polarisation."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q41",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) E°cell remains unchanged when the balanced reaction is multiplied by two. Reason (R) Cell potential is an extensive property.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - A is true and R is false A is true and R is false. Doubling the reaction doubles n and ΔG°, leaving −ΔG°/(nF) unchanged. Potential is intensive."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q42",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) Zn is the anode in an operating Daniell cell. Reason (R) Zn is oxidised to Zn<sup>2+</sup> in the spontaneous cell reaction.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - Both A and R are true, and R explains A Both are true. Zn loses electrons to form Zn<sup>2+</sup>, and oxidation defines the anode."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q43",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) A salt bridge helps maintain electrical neutrality in each half-cell. Reason (R) Electrons travel through the salt bridge from anode to cathode.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - A is true and R is false A is true and R is false. Salt-bridge ions move to preserve neutrality. Electrons travel in the external wire."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q44",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) Depositing one mole of Al requires three faradays from Al<sup>3+</sup>. Reason (R) Each Al<sup>3+</sup> ion gains three electrons.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - Both A and R are true, and R explains A Both are true. One mole of Al<sup>3+</sup> accepts 3 mol of electrons, so deposition requires 3 F."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q45",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) A fuel cell can keep operating while reactants are supplied. Reason (R) A fuel cell stores all reactants permanently inside its electrodes.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 2,
+    "answer": "C",
+    "solution": "C - A is true and R is false A is true and R is false. Fuel flows in from outside and the cell operates while reactants are supplied and products can be removed."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q46",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) A Mg block can protect iron against corrosion. Reason (R) Mg oxidises more readily than iron and acts as a sacrificial anode.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 0,
+    "answer": "A",
+    "solution": "A - Both A and R are true, and R explains A Both are true. Mg has the more negative reduction potential and oxidises in preference to Fe."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q47",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) A standard hydrogen electrode is assigned zero standard potential. Reason (R) Its inert conductor is platinum.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - Both A and R are true, and R does not explain A Both are true. The zero potential of the standard hydrogen electrode is assigned by convention. Platinum supplies an inert conducting surface."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q48",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) Lead storage batteries are secondary cells. Reason (R) The electrolyte in a lead storage battery contains sulfuric acid.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 1,
+    "answer": "B",
+    "solution": "B - Both A and R are true, and R does not explain A Both are true. The battery is secondary because discharge can be reversed by charging. Sulfuric acid is its electrolyte."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q49",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) The EMF at equilibrium is always equal to the standard EMF. Reason (R) The reaction quotient equals K at equilibrium.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - A is false and R is true A is false and R is true. At Q = K the equilibrium EMF is zero, while E° is defined for standard states and need not be zero."
+  },
+  {
+    "id": "12th-ch02-electrochemistry-lvl1-q50",
+    "heading": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "title": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "chapter": "Electrochemistry",
+    "year": "Practice Set",
+    "type": "Assertion-Reason",
+    "tag": "12th Ch 2 Electrochemistry Practice MCQ Level 1",
+    "question": "Assertion (A) Molar conductivity of a weak electrolyte decreases on dilution. Reason (R) Dilution increases the degree of dissociation of a weak electrolyte.",
+    "options": [
+      "Both A and R are true, and R correctly explains A.",
+      "Both A and R are true, but R does not correctly explain A.",
+      "A is true, but R is false.",
+      "A is false, but R is true."
+    ],
+    "answerIndex": 3,
+    "answer": "D",
+    "solution": "D - A is false and R is true A is false and R is true. Dilution increases the degree of dissociation and therefore increases molar conductivity."
   }
 ]
