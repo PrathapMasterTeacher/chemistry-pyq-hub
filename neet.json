@@ -1,0 +1,13 @@
+[
+  {
+    "id": "neet-2024-01",
+    "chapter": "Coordination Compounds",
+    "year": 2024,
+    "type": "MCQ",
+    "tag": "Isomerism",
+    "question": "Which complex does NOT show geometrical isomerism?",
+    "options": ["[Pt(NH<sub>3</sub>)<sub>2</sub>Cl<sub>2</sub>]", "[Co(NH<sub>3</sub>)<sub>4</sub>Cl<sub>2</sub>]<sup>+</sup>", "[Co(NH<sub>3</sub>)<sub>5</sub>Cl]<sup>2+</sup>", "[Cr(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup>"],
+    "answerIndex": 2,
+    "solution": "A complex of type <strong>[MA<sub>5</sub>B]</strong> ([Co(NH<sub>3</sub>)<sub>5</sub>Cl]<sup>2+</sup>) has only one spatial arrangement and cannot exhibit cis-trans isomerism."
+  }
+]
