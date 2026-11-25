@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chemistry PYQ Hub | CBSE, TN Board, NEET, JEE &amp; CUET</title>
+  <style>
+    :root {
+      --bg: #f8fafc; --card: #ffffff; --text: #0f172a; --muted: #64748b;
+      --border: #e2e8f0; --primary: #0f766e; --primary-light: #ccfbf1;
+      --success: #16a34a; --success-bg: #dcfce7; --danger: #dc2626;
+      --danger-bg: #fee2e2; --warn: #d97706; --warn-bg: #fef3c7;
+    }
+    body.dark {
+      --bg: #0f172a; --card: #1e293b; --text: #f1f5f9; --muted: #94a3b8;
+      --border: #334155; --primary: #14b8a6; --primary-light: #134e4a;
+      --success: #4ade80; --success-bg: #14532d; --danger: #f87171;
+      --danger-bg: #7f1d1d; --warn: #fbbf24; --warn-bg: #78350f;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: var(--card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 20; }
+    .nav-wrap { max-width: 980px; margin: 0 auto; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .brand h1 { font-size: 1.15rem; color: var(--primary); }
+    .brand p { font-size: 0.78rem; color: var(--muted); }
+    .nav-actions { display: flex; gap: 8px; }
+    .theme-btn, .wa-btn { border: 1px solid var(--border); background: var(--bg); color: var(--text); padding: 6px 11px; border-radius: 8px; cursor: pointer; font-size: 0.8rem; font-weight: 600; text-decoration: none; }
+    .wa-btn { background: var(--success-bg); color: var(--success); border-color: var(--success); }
+    main { max-width: 980px; margin: 18px auto 50px; padding: 0 16px; }
+    .exam-tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 16px; }
+    .exam-tab { padding: 9px 15px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text); font-weight: 600; font-size: 0.86rem; cursor: pointer; white-space: nowrap; }
+    .exam-tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+    .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px; text-align: center; }
+    .stat-num { font-size: 1.3rem; font-weight: 700; color: var(--primary); }
+    .stat-label { font-size: 0.75rem; color: var(--muted); }
+    .controls { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 18px; display: grid; gap: 10px; }
+    .filter-row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px; }
+    input[type="text"], select { width: 100%; padding: 9px 11px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); font-size: 0.9rem; }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { padding: 5px 11px; border-radius: 999px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 0.8rem; cursor: pointer; font-weight: 500; }
+    .chip.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .q-list { display: grid; gap: 14px; }
+    .q-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+    .badge { font-size: 0.74rem; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: var(--bg); border: 1px solid var(--border); color: var(--muted); }
+    .badge.chapter { background: var(--primary-light); color: var(--primary); border: none; }
+    .badge.year { background: var(--warn-bg); color: var(--warn); border: none; }
+    .q-text { font-size: 1rem; font-weight: 500; margin-bottom: 12px; }
+    .options { display: grid; gap: 8px; margin-bottom: 12px; }
+    .opt-btn { text-align: left; padding: 9px 13px; border-radius: 9px; border: 1px solid var(--border); background: var(--bg); color: var(--text); cursor: pointer; font-size: 0.92rem; }
+    .opt-btn.correct { background: var(--success-bg); border-color: var(--success); color: var(--success); font-weight: 600; }
+    .opt-btn.wrong { background: var(--danger-bg); border-color: var(--danger); color: var(--danger); }
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .btn { padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+    .btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .btn.solved { background: var(--success-bg); color: var(--success); border-color: var(--success); }
+    .btn.saved { background: var(--warn-bg); color: var(--warn); border-color: var(--warn); }
+    .solution-box { display: none; margin-top: 12px; padding: 13px; border-radius: 10px; background: var(--bg); border-left: 4px solid var(--primary); font-size: 0.92rem; }
+    .solution-box.open { display: block; }
+    .solution-title { font-weight: 700; color: var(--primary); margin-bottom: 5px; font-size: 0.82rem; text-transform: uppercase; }
+    .empty { text-align: center; padding: 36px 16px; color: var(--muted); background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
+    footer { text-align: center; padding: 20px 16px; font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--border); }
+    footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    @media (max-width: 680px) { .filter-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap">
+      <div class="brand">
+        <h1>Chemistry PYQ Hub</h1>
+        <p>By M. Prathap (M.Sc., B.Ed.) &bull; Tamil &amp; English</p>
+      </div>
+      <div class="nav-actions">
+        <a class="wa-btn" href="https://wa.me/919677795536" target="_blank">Doubts</a>
+        <button class="theme-btn" id="themeToggle">Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="exam-tabs" id="examTabs">
+      <button class="exam-tab active" data-exam="cbse12">CBSE Class 12</button>
+      <button class="exam-tab" data-exam="tnboard12">TN Board Class 12</button>
+      <button class="exam-tab" data-exam="neet">NEET</button>
+      <button class="exam-tab" data-exam="jee">JEE Main &amp; Adv</button>
+      <button class="exam-tab" data-exam="cuet">CUET</button>
+    </div>
+
+    <section class="stats-grid">
+      <div class="stat-card"><div class="stat-num" id="statTotal">0</div><div class="stat-label">Exam PYQs</div></div>
+      <div class="stat-card"><div class="stat-num" id="statSolved">0</div><div class="stat-label">Solved</div></div>
+      <div class="stat-card"><div class="stat-num" id="statSaved">0</div><div class="stat-label">Bookmarked</div></div>
+    </section>
+
+    <section class="controls">
+      <input type="text" id="searchInput" placeholder="Search topic, reaction, formula, or keyword..." />
+      <div class="filter-row">
+        <select id="chapterFilter"><option value="all">All Chapters</option></select>
+        <select id="yearFilter"><option value="all">All Years</option></select>
+        <select id="typeFilter"><option value="all">All Question Types</option></select>
+      </div>
+      <div class="chip-row">
+        <button class="chip active" data-mode="all">All</button>
+        <button class="chip" data-mode="unsolved">Unsolved</button>
+        <button class="chip" data-mode="bookmarked">Bookmarked</button>
+      </div>
+    </section>
+
+    <section class="q-list" id="questionList"><div class="empty">Loading questions...</div></section>
+  </main>
+
+  <footer>
+    Curated by <strong>M. Prathap, M.Sc. Chemistry, B.Ed.</strong> &bull;
+    <a href="https://www.chemistryachieversacademy.in" target="_blank">www.chemistryachieversacademy.in</a>
+  </footer>
+
+  <script>
+    let currentExam = "cbse12";
+    let currentQuestions = [];
+    let activeMode = "all";
+    let solvedIds = new Set(JSON.parse(localStorage.getItem("caa_pyq_solved") || "[]"));
+    let savedIds = new Set(JSON.parse(localStorage.getItem("caa_pyq_saved") || "[]"));
+
+    const chapterFilter = document.getElementById("chapterFilter");
+    const yearFilter = document.getElementById("yearFilter");
+    const typeFilter = document.getElementById("typeFilter");
+    const searchInput = document.getElementById("searchInput");
+    const questionList = document.getElementById("questionList");
+
+    async function loadExam(examKey) {
+      currentExam = examKey;
+      questionList.innerHTML = `<div class="empty">Loading ${examKey.toUpperCase()} PYQs...</div>`;
+      try {
+        const res = await fetch(`${examKey}.json?v=${Date.now()}`);
+        if (!res.ok) throw new Error("Not found");
+        currentQuestions = await res.json();
+      } catch (e) {
+        currentQuestions = [];
+      }
+      populateFilters();
+      updateStats();
+      renderQuestions();
+    }
+
+    function populateFilters() {
+      const chapters = [...new Set(currentQuestions.map(q => q.chapter))];
+      chapterFilter.innerHTML = `<option value="all">All Chapters (${chapters.length})</option>` +
+        chapters.map(c => `<option value="${c}">${c}</option>`).join("");
+
+      const years = [...new Set(currentQuestions.map(q => q.year))].sort((a, b) => b - a);
+      yearFilter.innerHTML = `<option value="all">All Years</option>` +
+        years.map(y => `<option value="${y}">${y}</option>`).join("");
+
+      const types = [...new Set(currentQuestions.map(q => q.type))];
+      typeFilter.innerHTML = `<option value="all">All Question Types</option>` +
+        types.map(t => `<option value="${t}">${t}</option>`).join("");
+    }
+
+    function updateStats() {
+      document.getElementById("statTotal").textContent = currentQuestions.length;
+      document.getElementById("statSolved").textContent = solvedIds.size;
+      document.getElementById("statSaved").textContent = savedIds.size;
+    }
+
+    function renderQuestions() {
+      if (!currentQuestions.length) {
+        questionList.innerHTML = `<div class="empty">Questions for this exam are being uploaded soon! Check back or message on WhatsApp (9677795536).</div>`;
+        return;
+      }
+      const ch = chapterFilter.value;
+      const yr = yearFilter.value;
+      const tp = typeFilter.value;
+      const term = searchInput.value.trim().toLowerCase();
+
+      const filtered = currentQuestions.filter(q => {
+        if (ch !== "all" && q.chapter !== ch) return false;
+        if (yr !== "all" && String(q.year) !== yr) return false;
+        if (tp !== "all" && q.type !== tp) return false;
+        if (activeMode === "unsolved" && solvedIds.has(q.id)) return false;
+        if (activeMode === "bookmarked" && !savedIds.has(q.id)) return false;
+        if (term && !`${q.chapter} ${q.tag || ""} ${q.question} ${q.solution}`.toLowerCase().includes(term)) return false;
+        return true;
+      });
+
+      if (!filtered.length) {
+        questionList.innerHTML = `<div class="empty">No matching questions found. Try clearing your filter.</div>`;
+        return;
+      }
+
+      questionList.innerHTML = filtered.map((q, idx) => {
+        const isSolved = solvedIds.has(q.id);
+        const isSaved = savedIds.has(q.id);
+        const opts = q.options && q.options.length ? `<div class="options">${q.options.map((o, i) =>
+          `<button class="opt-btn" onclick="checkOption('${q.id}', ${i}, ${q.answerIndex}, this)"><strong>${String.fromCharCode(65 + i)}.</strong> ${o}</button>`
+        ).join("")}</div>` : "";
+
+        return `
+          <article class="q-card">
+            <div class="badges">
+              <span class="badge chapter">${q.chapter}</span>
+              <span class="badge year">${q.year}</span>
+              <span class="badge">${q.type}</span>
+              ${q.tag ? `<span class="badge">${q.tag}</span>` : ""}
+            </div>
+            <div class="q-text"><strong>Q${idx + 1}.</strong> ${q.question}</div>
+            ${opts}
+            <div class="actions">
+              <button class="btn primary" onclick="toggleSolution('${q.id}', this)">Show Solution</button>
+              <button class="btn ${isSolved ? "solved" : ""}" onclick="toggleSolved('${q.id}')">${isSolved ? "✓ Solved" : "Mark Solved"}</button>
+              <button class="btn ${isSaved ? "saved" : ""}" onclick="toggleSaved('${q.id}')">${isSaved ? "★ Saved" : "☆ Bookmark"}</button>
+            </div>
+            <div class="solution-box" id="sol-${q.id}">
+              <div class="solution-title">Detailed Solution</div>
+              <div>${q.solution}</div>
+            </div>
+          </article>`;
+      }).join("");
+    }
+
+    window.checkOption = (qid, chosen, correct, btn) => {
+      btn.parentElement.querySelectorAll(".opt-btn").forEach((b, i) => {
+        b.disabled = true;
+        if (i === correct) b.classList.add("correct");
+        else if (i === chosen) b.classList.add("wrong");
+      });
+      if (chosen === correct) {
+        solvedIds.add(qid);
+        localStorage.setItem("caa_pyq_solved", JSON.stringify([...solvedIds]));
+        updateStats();
+      }
+      document.getElementById(`sol-${qid}`).classList.add("open");
+    };
+
+    window.toggleSolution = (qid, btn) => {
+      const open = document.getElementById(`sol-${qid}`).classList.toggle("open");
+      btn.textContent = open ? "Hide Solution" : "Show Solution";
+    };
+
+    window.toggleSolved = qid => {
+      solvedIds.has(qid) ? solvedIds.delete(qid) : solvedIds.add(qid);
+      localStorage.setItem("caa_pyq_solved", JSON.stringify([...solvedIds]));
+      updateStats(); renderQuestions();
+    };
+
+    window.toggleSaved = qid => {
+      savedIds.has(qid) ? savedIds.delete(qid) : savedIds.add(qid);
+      localStorage.setItem("caa_pyq_saved", JSON.stringify([...savedIds]));
+      updateStats(); renderQuestions();
+    };
+
+    document.querySelectorAll(".exam-tab").forEach(tab => {
+      tab.addEventListener("click", () => {
+        document.querySelectorAll(".exam-tab").forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+        loadExam(tab.dataset.exam);
+      });
+    });
+
+    document.querySelectorAll(".chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+        activeMode = chip.dataset.mode;
+        renderQuestions();
+      });
+    });
+
+    [chapterFilter, yearFilter, typeFilter].forEach(el => el.addEventListener("change", renderQuestions));
+    searchInput.addEventListener("input", renderQuestions);
+
+    const themeBtn = document.getElementById("themeToggle");
+    if (localStorage.getItem("caa_pyq_theme") === "dark") { document.body.classList.add("dark"); themeBtn.textContent = "Light"; }
+    themeBtn.addEventListener("click", () => {
+      const dark = document.body.classList.toggle("dark");
+      themeBtn.textContent = dark ? "Light" : "Dark";
+      localStorage.setItem("caa_pyq_theme", dark ? "dark" : "light");
+    });
+
+    loadExam("cbse12");
+  </script>
+</body>
+</html>
